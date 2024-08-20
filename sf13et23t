@@ -16,15 +16,24 @@ local Notif = library:InitNotifications()
 local LoadingXSX = Notif:Notify("Loading SOlaris lib v3, please be patient.", 5, "information") 
 
 library.title = "Solz GUI V3"
-
+    
 library:Introduction()
 wait(1)
 local Init = library:Init()
 
-local Tab1 = Init:NewTab("Example tab")
+local Tab1 = Init:NewTab("Police!")
 
-local Section1 = Tab1:NewSection("Example Components")
+local Section1 = Tab1:NewSection("Aimbot")
 
+local Label1 = Tab1:NewLabel("Aimbot is a function to make your aim go directly to your enemy!", "left")--"left", "center", "right"
+
+
+
+local Tab1 = Init:NewTab("Criminal!")
+
+local Section1 = Tab1:NewSection("Aimbot")
+
+local Label1 = Tab1:NewLabel("Aimbot is a function to make your aim go directly to your enemy!", "left")--"left", "center", "right"
 
 local Label1 = Tab1:NewLabel("Example label", "left")--"left", "center", "right"
 
